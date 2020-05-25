@@ -16,8 +16,10 @@ const images = [
   },
 ];
 
-const html = images.map(
+let html = images.map(
   ({ url, alt }) => `<li><img class="my-image" src="${url}" alt="${alt}"></li>`,
 );
+
+html = `<div class="img-div">${html}</div>`;
 
 document.querySelector('ul#gallery').insertAdjacentHTML('afterbegin', html);

@@ -1,4 +1,9 @@
 .my-image {
-  display: flexbox;
-  max-width: 100%;
+  width: 80%;
+}
+
+.img-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
