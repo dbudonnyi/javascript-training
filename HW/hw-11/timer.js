@@ -7,6 +7,7 @@ class CountdownTimer {
       secs: document.querySelector(`${selector} span[data-value="secs"]`),
     };
 
+    // eslint-disable-next-line no-use-before-define
     const id = setInterval(changeTimer, 1000);
 
     function changeTimer() {
@@ -27,6 +28,7 @@ class CountdownTimer {
   }
 }
 
+// eslint-disable-next-line no-new
 new CountdownTimer({
   selector: '#timer-1',
   targetDate: new Date('Jun 25, 2020 21:39'),
